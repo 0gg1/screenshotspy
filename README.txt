@@ -1,0 +1,3 @@
+Before execute-ing program, you need to install newest version of python (currently 3.10), and need to install libraries, via pip install...
+
+This is made just for fun, and you should not use this on someone without his permission.
